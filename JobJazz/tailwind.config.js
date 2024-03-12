@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        brockmann: ["Brockmann", "sans-serif"],
       },
       colors: {
         gold: "#DFA100",
