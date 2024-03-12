@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Rating from "./rating"
 
 function Card() {
@@ -9,7 +10,7 @@ function Card() {
                 <img src="#" alt="Profile Picture" className=" w-10 h-10 bg-black rounded-full"/>
             </div>
             <p className="ml-5 -mt-1">Software Developer</p>
-            <Rating/>
+            <Rating />
         </div>
     )
 }
