@@ -26,15 +26,17 @@ function Navbar() {
                 </div>
             </div>
 
-            <div className="relative flex items-center space-x-16">
+            <div className="relative flex items-center">
                 <div className="relative">
                     <img src={searchIcon} alt="Search Icon" className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5" />
                     <input type="text" placeholder="Search" className="pl-10 pr-8 py-2 border border-gray-300 rounded-full focus:outline-none" />
                     <button className="absolute right-2 top-1/2 transform -translate-y-1/2 text-sm text-gray-600 rounded-full py-2 px-4">Filter</button>
                 </div>
-                <button className='bg-purple-500 text-white px-7 py-2 rounded-full'>
-                    <Link to="/login">Login</Link>
-                </button>
+                <div className="hidden md:flex items-center ml-8 space-x-4">
+                    <button className="bg-purple-500 text-white px-7 py-2 rounded-full">
+                        <Link to="/login">Login</Link>
+                    </button>
+                </div>
                 <button className="md:hidden ml-4" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
                     <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
@@ -49,6 +51,9 @@ function Navbar() {
                     </li>
                     <li className="w-full text-center py-2 hover:bg-blue-200">
                         <Link to="/findfreelancers" className="" onClick={() => setIsMobileMenuOpen(false)}>Find Freelancers</Link>
+                    </li>
+                    <li className="w-full text-center py-2 hover:bg-blue-200">
+                        <Link to="/login" className="" onClick={() => setIsMobileMenuOpen(false)}>Login</Link>
                     </li>
                 </ul>
             </div>
