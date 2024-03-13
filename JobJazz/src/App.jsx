@@ -6,6 +6,7 @@ import Login from "./pages/AccountHandling/Login.jsx"
 import FreelancerProfile from "./pages/Freelancer/Freelancer.jsx"
 import FindWork from './pages/FindWork/FindWork.jsx'; // Assuming correct file path and component name
 import FindFreelancer from './pages/FindFreelancers/FindFreelancers.jsx'; // Assuming correct file path and component name
+import Register from './pages/AccountHandling/Register.jsx';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="findfreelancers" element={<FindFreelancer />} />
         <Route path="freelancerprofile" element={<FreelancerProfile />} />
         <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   );
