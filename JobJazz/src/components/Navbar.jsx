@@ -20,14 +20,13 @@ function Navbar() {
                     <img src={Logo} alt="JobJazz Logo" className="w-10 cursor-pointer mr-2" />
                     <span className="text-black font-semibold text-4xl">JobJazz</span>
                 </Link>
+                <div className="hidden md:flex items-center ml-8 space-x-14">
+                    <Link to="/findwork" className="text-gray-600 hover:text-black text-xl">Find Work</Link>
+                    <Link to="/findfreelancers" className="text-gray-600 text-xl hover:text-black">Find Freelancers</Link>
+                </div>
             </div>
 
-            <div className="hidden md:flex items-center mr-[45vw] space-x-14">
-                <Link to="/findwork" className="text-gray-600 hover:text-black text-xl">Find Work</Link>
-                <Link to="/findfreelancers" className="text-gray-600 text-xl hover:text-black">Find Freelancers</Link>
-            </div>
-
-            <div className="relative flex items-center right-10 space-x-16">
+            <div className="relative flex items-center space-x-16">
                 <div className="relative">
                     <img src={searchIcon} alt="Search Icon" className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5" />
                     <input type="text" placeholder="Search" className="pl-10 pr-8 py-2 border border-gray-300 rounded-full focus:outline-none" />
