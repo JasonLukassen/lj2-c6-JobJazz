@@ -16,9 +16,9 @@ function Navbar() {
             </div>
 
             <div className="hidden md:flex items-center mr-[45vw] space-x-14">
-                    <Link to="/findwork" className="text-gray-600 hover:text-black text-xl">Find Work</Link>
-                    <Link to="/findfreelancers" className="text-gray-600 text-xl hover:text-black">Find Freelancers</Link>
-                </div>
+                <Link to="/findwork" className="text-gray-600 hover:text-black text-xl">Find Work</Link>
+                <Link to="/findfreelancers" className="text-gray-600 text-xl hover:text-black">Find Freelancers</Link>
+            </div>
 
             <div className="relative flex items-center right-10 space-x-16">
                 <div className="relative">
@@ -26,7 +26,9 @@ function Navbar() {
                     <input type="text" placeholder="Search" className="pl-10 pr-8 py-2 border border-gray-300 rounded-full focus:outline-none" />
                     <button className="absolute right-2 top-1/2 transform -translate-y-1/2 text-sm text-gray-600 rounded-full py-2 px-4">Filter</button>
                 </div>
-                <Link to="/login" className="bg-purple-500 text-white px-7 py-2 rounded-full">Login</Link>
+                <button className='bg-purple-500 text-white px-7 py-2 rounded-full'>
+                    <Link to="/login">Login</Link>
+                </button>
                 <button className="md:hidden ml-4" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
                     <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
