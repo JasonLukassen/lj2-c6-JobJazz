@@ -8,12 +8,12 @@ export default {
         brockmann: ["Brockmann", "sans-serif"],
       },
       colors: {
-        gold: "#DFA100",
-        contact: "#212121",
-        pricing: "#1E1E1E",
-        "purpleborder": "B265FC",
-        "dark-contact": "#1A1A1A",
-        "blue-charcoal": "#22262A",
+        backgroundColor: "F3F3F3",
+        purpleButtons: "B265FC",
+        darkPurpleText: "916BBF",
+        darkPurpleLogo: "6A1AB7",
+
+
       },
     },
   },
